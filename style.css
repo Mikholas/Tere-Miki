@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+.hamburger {
+    cursor: pointer;
+    font-size: 24px;
+    display: inline-block;
+}
+.menu {
+    list-style-type: none;
+    display: none; /* hidden by default */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+}
+.menu li {
+    display: block; /* each item takes a full line */
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+.menu li a:hover {
+    background-color: #333; /* darker background on hover */
+}
+.gallery {
+    text-align: center;
+}
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s; /* animation for hover effect */
+}
+.gallery-item:hover {
+    transform: scale(1.05); /* scale up on hover */
+}
+.gallery img, .gallery video {
+    width: 300px;
+    border-radius: 10px; /* rounded corners */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.social-media {
+    list-style-type: none;
+    padding: 0;
+}
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+.social-media li a {
+    color: white;
+    text-decoration: none;
+}
+.social-media li a:hover {
+    text-decoration: underline; /* underline on hover */
+}

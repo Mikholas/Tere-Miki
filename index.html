@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenangan Bersama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="hamburger">☰</div>
+        <ul class="menu">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#music">Koleksi Musik</a></li>
+            <li><a href="#calendar">Kalender Kenangan</a></li>
+            <li><a href="#testimonials">Testimoni & Harapan</a></li>
+            <li><a href="#comments">Komentar</a></li>
+        </ul>
+    </div>
+    <section id="home">
+        <h1>Haiii Selamat Melihat-Lihat Kenangan Kita</h1>
+        <div class="gallery">
+            <h2>Galeri Foto & Video</h2>
+            <div class="gallery-item">
+                <img src="img/fotomiki.jpg" alt="Kenangan 1">
+                <img src="img/fototere.jpg" alt="Kenangan 2">
+            </div>
+            <div class="gallery-item">
+                <video controls src="img/videokorelase.mp4"></video>
+            </div>
+        </div>
+    </section>
+    <section id="music">
+        <h2>Koleksi Musik</h2>
+        <ul>
+            <li><a href="https://youtu.be/kPa7bsKwL-c?si=2IoLyDry3ZmZncBs">Die With A Smile</a></li>
+            <li><a href="https://youtu.be/oNjQXmoxiQ8?si=n4nWG5f_29NSClTB">Forever Young</a></li>
+        </ul>
+    </section>
+    <section id="calendar">
+        <h2>Sepanjang Jalan</h2>
+        <p>Membahas Berbagai Hal Meskipun Respon Hanya "Hah? Hah? Apa? Ga Kedengeran"</p>
+    </section>
+    <section id="testimonials">
+        <h2>Harapan Kita</h2>
+        <p>Yang Penting Bahagia Tanpa Menyakiti Satu Sama Lain</p>
+    </section>
+    <section id="comments">
+        <h2>Komentar</h2>
+        <form action="#">
+            <textarea placeholder="Tinggalkan komentar..."></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+    <footer>
+        <h3>Ikuti Kami di Media Sosial</h3>
+        <ul class="social-media">
+            <li><a href="https://www.instagram.com/mikholasandiw?igsh=MXAxaXBnazE2cmt6bQ==">IG:@Mikholasandiw</a></li>
+            <li><a href="https://www.instagram.com/madebyniacaa?igsh=MTk0Z21peWwycjZ1bQ==">IG:@madebyniacaa</a></li>
+        </ul>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
